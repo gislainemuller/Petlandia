@@ -1,0 +1,97 @@
+.banner{
+    background-image: url('https://wallpaperbat.com/img/56527086-cat-and-dog-wallpaper.jpg');
+  
+    background-position:center;
+    
+    background-size: cover;
+ 
+    background-repeat: no-repeat;
+    
+    background-attachment: initial;
+
+    background-origin: initial;
+
+    background-clip: initial;
+    height: 450px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+}
+.banner h1{
+    font-size: 2.5rem;
+}
+.detalhes{
+    display:flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.detalhe{
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50%{
+        transform: translateY(-5px) scale(1.05);
+    }
+    100%{
+        transform: translateY(0) scale(1);
+    }
+}
+.detalhe:hover{
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.opcoes{
+    background-color: #fff;
+    max-width:  800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    overflow-x: auto;
+}
+
+.opcoes h2{
+    margin-bottom: 15px;
+    color: #d49cd5e2;
+    text-align: center;
+}
+.opcoes table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.opcoes th,
+.opcoes td{
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.opcoes th{
+    background-color: #ee8bf3;
+    color: #fff;
+}
+.opcoes tr:nth-child(even){
+    background-color: #fff;
+
+}
+.opcoes tr:hover{
+    background-color: #b0bff0c8;
+
+}
